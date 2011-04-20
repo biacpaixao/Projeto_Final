@@ -1,0 +1,37 @@
+Capitulo 1 - Introdução
+1.1 Motivação
+1.2 Objetivo
+1.3 Organização
+
+2 - ??
+(nesse capitulo, a professora orientou a fazer primeiro um comparativo entre caracteristicas que existem em todos os bancos, como o modelo, a linguagem e se for interessante alguma outra característica, que seja colocada na seção 2.1.n de Outras Características)
+
+2.1 MySQL
+2.1.1 Modelo de Dados
+2.1.2 Linguagem Consulta
+2.1.3 ??
+.
+.
+2.1.n Outras características
+
+2.2 Sedna
+...
+
+2.3 Cassandra
+...
+2.4 MongoDB
+...
+2.5 Redis
+...
+
+3 Exemplo de aplicação
+descrição TPC - ??
+
+4 Avaliação
+4.1 Desempenho
+4.2 Modelagem (como armzenou esquema)
+4.3 ...
+(Na avaliação queria tambem apresentar as dificuldades que tivemos com a implementação nos bancos)
+
+5 Conclusão
+
