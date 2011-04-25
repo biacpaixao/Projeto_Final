@@ -20,4 +20,5 @@ http://openmymind.net/mongodb.pdf
 sedna:
 
 mysql:
-
+http://dev.mysql.com/doc/
+MySQL, Paul DuBois, Ed New Riders
