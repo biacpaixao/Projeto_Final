@@ -1,0 +1,35 @@
+#Security Schema
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tSecurity">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="s_issue" type="xs:string"/>
+			<xs:element name="s_name" type="xs:string"/>
+			<xs:element name="s_ex_id" type="xs:string"/>
+			<xs:element name="s_co_id" type="xs:string"/>
+			
+			<xs:element name="s_num_out" type="xs:integer"/>			
+			<xs:element name="s_start_date" type="xs:date"/>
+			<xs:element name="s_exch_date" type="xs:date"/>
+			<xs:element name="s_pe" type="xs:integer"/>
+			<xs:element name="s_52wk_high" type="xs:integer"/>
+			<xs:element name="s_52wk_high_date" type="xs:date"/>			
+			<xs:element name="s_52wk_low" type="xs:integer"/>
+			<xs:element name="s_52wk_low_date" type="xs:date"/>
+			
+			<xs:element name="s_dividend" type="xs:decimal"/>
+			<xs:element name="s_yield" type="xs:decimal"/>
+			
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tSecurities">
+		<xs:sequence>
+			<xs:element name="security" type="tSecurity" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="securities" type="tSecurities"/>
+</xs:schema>

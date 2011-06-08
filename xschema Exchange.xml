@@ -1,0 +1,40 @@
+#Exchange Schema
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tExchange">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="ex_name" type="xs:string"/>
+			<xs:element name="ex_num_symb" type="xs:integer"/>
+			<xs:element name="ex_open" type="xs:string"/>
+			<xs:element name="ex_close" type="xs:string"/>			
+			<xs:element name="address" type="tAddress"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tAddress">
+		<xs:sequence>
+			<xs:element name="ad_line" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_line2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_ctry" type="xs:string" minOccurs="0" maxOccurs="1"/>			
+			<xs:element name="zipcode" type="tZipCode"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tZipCode">
+		<xs:sequence>
+			<xs:element name="zc_code" type="xs:string"/>
+			<xs:element name="zc_town" type="xs:string"/>
+			<xs:element name="zc_div" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tExchanges">
+		<xs:sequence>
+			<xs:element name="exchange" type="tExchange" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="exchanges" type="tExchanges"/>
+</xs:schema>

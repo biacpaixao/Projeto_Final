@@ -1,0 +1,49 @@
+#Company Schema
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tCompany">
+		<xs:sequence>
+			<xs:element name="id" type="xs:string"/>
+			<xs:element name="co_name" type="xs:string"/>
+			<xs:element name="co_sp_ate" type="xs:string"/>
+			<xs:element name="co_desc" type="xs:string"/>
+			<xs:element name="co_open_date" type="xs:date"/>
+			<xs:element name="status_type" type="xs:string"/>			
+			<xs:element name="industries" type="tIndustries" minOccurs="0" maxOccurs="unbounded"/>	
+			<xs:element name="address" type="tAddress"/>			
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tIndustries">
+		<xs:sequence>
+			<xs:element name="in_name" type="xs:string"/>
+			<xs:element name="sector" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tAddress">
+		<xs:sequence>
+			<xs:element name="ad_line" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_line2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_ctry" type="xs:string" minOccurs="0" maxOccurs="1"/>			
+			<xs:element name="zipcode" type="tZipCode"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tZipCode">
+		<xs:sequence>
+			<xs:element name="zc_code" type="xs:string"/>
+			<xs:element name="zc_town" type="xs:string"/>
+			<xs:element name="zc_div" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tCompanies">
+		<xs:sequence>
+			<xs:element name="company" type="tCompany" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="companies" type="tCompanies"/>
+</xs:schema>

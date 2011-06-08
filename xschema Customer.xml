@@ -1,0 +1,135 @@
+#Customer Schema
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tCustomer">
+		<xs:sequence>
+			<xs:element name="c_id" type="xs:integer"/>			
+			<xs:element name="c_l_name" type="xs:string"/>			
+			<xs:element name="c_f_name" type="xs:string"/>
+			<xs:element name="c_m_name" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="c_gndr" type="xs:string" minOccurs="0" maxOccurs="1"/>			
+			<xs:element name="c_tier" type="xs:integer"/>
+			<xs:element name="c_dob" type="xs:date"/>
+			<xs:element name="status_type" type="xs:string"/>
+			
+			<xs:element name="address" type="tAddress"/>
+			<xs:element name="taxrate" type="tTaxRate"/>
+			
+			<xs:element name="customer_accounts" type="tCustomerAccounts" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="watch_list" type="tWatchList" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tAddress">
+		<xs:sequence>
+			<xs:element name="ad_line" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_line2" type="xs:string" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="ad_ctry" type="xs:string" minOccurs="0" maxOccurs="1"/>			
+			<xs:element name="zipcode" type="tZipCode"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tZipCode">
+		<xs:sequence>
+			<xs:element name="zc_code" type="xs:string"/>
+			<xs:element name="zc_town" type="xs:string"/>
+			<xs:element name="zc_div" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tTaxRate">
+		<xs:sequence>
+			<xs:element name="tx_id" type="xs:integer"/>
+			<xs:element name="tx_name" type="xs:string"/>
+			<xs:element name="tx_rate" type="xs:decimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tCustomerAccounts">
+		<xs:sequence>
+			<xs:element name="ca_id" type="xs:integer"/>
+			<xs:element name="ca_name" type="xs:string"/>
+			<xs:element name="ca_tax_st" type="xs:integer"/>
+			<xs:element name="ca_bal" type="xs:decimal"/>
+			<xs:element name="broker_id" type="xs:integer"/>
+			<xs:element name="account_permission" type="xs:tAccountPermission"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tAccountPermission">
+		<xs:sequence>
+			<xs:element name="ap_acl" type="xs:string"/>
+			<xs:element name="ap_l_name" type="xs:string"/>
+			<xs:element name="ap_f_name" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tWatchList">
+		<xs:sequence>
+			<xs:element name="wl_id" type="xs:string"/>
+			<xs:element name="id_security" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tCustomers">
+		<xs:sequence>
+			<xs:element name="customer" type="tCustomer" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="customers" type="tCustomers"/>
+	
+</xs:schema>
+
+
+
+--customer document exemplo
+
+<customer>
+	<id> c000 </id>
+	<c_l_name> Alberto </c_l_name>
+	<c_f_name> Scremin </c_f_name>
+	<c_tier> 1 </c_tier>
+	<c_dob> 02/09/2010 </c_dob>
+
+	<status_type> </status_type>
+	
+	<address>
+		<ad_line> </ad_line>
+		<ad_line2> </ad_line2>
+		<ad_ctry> </ad_ctry>
+		<zipcode>
+			<zc_code> </zc_code>
+			<zc_town> </zc_town>
+			<zc_div> </zc_div>
+		</zipcode>
+	</address>
+
+	<taxrate>
+		<tx_id> </tx_id>
+		<tx_name> </tx_name>
+		<tx_rate> </tx_rate>
+	</taxrate>
+	
+	<customer_accounts>
+		<ca_id> </ca_id>
+		<ca_name> </ca_name>
+		<ca_tax_st> </ca_tax_st>
+		<ca_bal> </ca_bal>
+		
+		<account_permission>
+			<ap_acl> </ap_acl>
+			<ap_l_name> </ap_l_name>
+			<ap_f_name> </ap_f_name>
+		</account_permission>
+		
+		<broker_id> </broker_id>
+	</customer_accounts>
+	
+	
+	<watch_list> 
+		<wl_id> </wl_id>
+		<id_security> </id_security>
+	</watch_list>
+</customer>	

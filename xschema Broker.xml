@@ -1,0 +1,22 @@
+#Broker Schema
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:complexType name="tBroker">
+		<xs:sequence>
+			<xs:element name="id" type="xs:integer"/>
+			<xs:element name="b_name" type="xs:string"/>
+			<xs:element name="b_num_trades" type="xs:integer"/>
+			<xs:element name="b_comm_total" type="xs:decimal"/>
+			<xs:element name="status_type" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tBrokers">
+		<xs:sequence>
+			<xs:element name="broker" type="tBroker" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="brokers" type="tBrokers"/>
+</xs:schema>
