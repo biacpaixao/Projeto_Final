@@ -1,7 +1,13 @@
-revisar intro e enviar para professora
-Fazer Imagens MongoDB
+fazer:
+Fazer Imagens MongoDB e Sedna
 Terminar revisão cassandra
 terminar revisão redis
 revisar v48~51
 procurar xml spy 2010 para desenho do schema
 ajeitar referencias de website
+iniciar conclusão, trabalhos futuros
+formatar com o livro vermelho
+revisar TPC Intro
+
+feito:
+revisar intro e enviar para professora
