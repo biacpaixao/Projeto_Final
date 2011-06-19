@@ -17,15 +17,14 @@ Nao e possivel sem utilizar o MapReduce
 --Sedna
 
 #1
+<customers>{
 for $x in doc("customers.xml")/customer
 return 
-<customers>
-	{		
+<customer>	{		
 		<c_l_name>{$x/c_l_name)}</c_l_name>,
-        <c_f_name>{$x/c_f_name)}</c_f_name>
-	}
-</customers>
-
+        <c_f_name>{$x/c_f_name)}</c_f_name> }
+</customer>
+}<customers>
 #2
 <security_list>
 { 
@@ -33,11 +32,7 @@ return
          $i in doc("customer.xml")/customers/watch_list/id_security,
          $s in doc("security.xml")/security[id = $i]
      return
-        <security>
-           {
-           $s
-           }
-        </security>
+        <security>{ $s }</security>
 }
 </security_list>
 
@@ -48,12 +43,17 @@ return
 <customers>
 	{		
 		<c_l_name>{$x/c_l_name)}</c_l_name>,
-        <c_f_name>{$x/c_f_name)}</c_f_name>
+        <c_f_name>{$x/c_f_name)}</c_f_name>,
 		<tx_rate>{$x/taxrate/tx_rate}</tx_rate>
 	}
 </customers>
 
 #4
+
+for $x in doc("customers.xml")
+for $y in doc("broker.xml")
+	if count($x/customer/b_id) > 1
+	return <broker_name> {$y/broker_name} </broker_name>
 
 
 
