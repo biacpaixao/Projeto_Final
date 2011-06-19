@@ -68,7 +68,7 @@
 	<xs:complexType name="tWatchList">
 		<xs:sequence>
 			<xs:element name="wl_id" type="xs:string"/>
-			<xs:element name="id_security" type="xs:string"/>
+			<xs:element name="id_security" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	

@@ -1,0 +1,60 @@
+--MongoDB
+
+#1
+db.customer.find({}, {'c_l_name' : 1, 'c_f_name': 1});
+
+#2
+- Precisa de 2 consultas ao banco
+result = db.customer.find({'watch_list.wl_id' : 'xxx'}, {'id_security' : 1});
+db.security.find({_id : {$in : result}});
+
+#3
+db.customer.find({}, {'c_l_name' : 1, 'c_f_name': 1, 'taxrate.tx_rate' : 1});
+
+#4
+Nao e possivel sem utilizar o MapReduce
+
+--Sedna
+
+#1
+for $x in doc("customers.xml")/customer
+return 
+<customers>
+	{		
+		<c_l_name>{$x/c_l_name)}</c_l_name>,
+        <c_f_name>{$x/c_f_name)}</c_f_name>
+	}
+</customers>
+
+#2
+<security_list>
+{ 
+     for $w in doc("customer.xml")/customers/watch_list[wl_id = 'xxx'],
+         $i in doc("customer.xml")/customers/watch_list/id_security,
+         $s in doc("security.xml")/security[id = $i]
+     return
+        <security>
+           {
+           $s
+           }
+        </security>
+}
+</security_list>
+
+
+#3 
+for $x in doc("customers.xml")/customer
+return 
+<customers>
+	{		
+		<c_l_name>{$x/c_l_name)}</c_l_name>,
+        <c_f_name>{$x/c_f_name)}</c_f_name>
+		<tx_rate>{$x/taxrate/tx_rate}</tx_rate>
+	}
+</customers>
+
+#4
+
+
+
+
