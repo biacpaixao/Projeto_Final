@@ -52,7 +52,7 @@ return
 
 for $x in doc("customers.xml")
 for $y in doc("broker.xml")
-	if count($x/customer/b_id) > 1
+	if count(group by ($x/customer/b_id)) > 1
 	return <broker_name> {$y/broker_name} </broker_name>
 
 
