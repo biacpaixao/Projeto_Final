@@ -11,3 +11,12 @@ revisar TPC Intro
 
 feito:
 revisar intro e enviar para professora
+
+
+--Novo:
+
+fazer:
+testar consultas do xml
+fazer o mapreduce para a consulta 4 do mongodb
+
+criar novas consultas
