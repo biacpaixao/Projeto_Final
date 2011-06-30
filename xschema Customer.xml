@@ -16,7 +16,7 @@
 			<xs:element name="address" type="tAddress"/>
 			<xs:element name="taxrate" type="tTaxRate"/>
 			
-			<xs:element name="customer_accounts" type="tCustomerAccounts" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="customer_account" type="tCustomerAccounts" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="watch_list" type="tWatchList" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
