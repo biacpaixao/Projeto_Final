@@ -1,0 +1,65 @@
+Selecionar todos os brokers que estão com status cancelado.
+
+select * from broker
+where b_st_id = 'CNCL';
+
+
+-
+
+Selecionar o setor de uma determinada company.
+
+Select s.sc_name
+From sector s, industry in, company c
+Where s.sc_id = in.in_sc_id
+And in.in_id = co.co_in_id
+And co.co_name = ‘XXXXX’;
+
+-
+
+Selecionar todas as empresas do Rio de Janeiro
+
+select co.* 
+from company co, address ad, zip_code zc
+where co.co_ad_id = ad.ad_id
+and   ad.ad_zc_code  = zc.zc_code
+and  zc_town = 'Rio de Janeiro';
+
+-
+
+
+Selecionar todos os clientes que possuem apenas uma conta associada
+
+select ca_c_id, count(*)
+from customer_account
+group by ca_c_id
+having count(*) = 1;
+
+-
+
+
+Selecionar todas as empresas que foram abertas dps do ano de 2010
+
+select * 
+from company 
+where co_open_date > '01/01/2010';
+
+-
+
+
+Selecionar todos exchange dos USA
+
+select ex.*
+from exchange ex, address ad
+where ex.ex_ad_id = ad.ad_id
+and  ad.ad_ctry = 'USA';
+
+-
+
+Selecionar todas as contas e permissoes de um dado cliente
+
+select ap.*
+from customer_account ca, account_permission ap
+where ca.ca_id = ap.ap_ca_id
+and ca.ca_c_id = xxxxx;
+
+
