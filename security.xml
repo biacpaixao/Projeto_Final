@@ -1,0 +1,41 @@
+<securities>
+	<security>
+		<id> 42</id>
+		<s_issue> 12</s_issue>
+		<s_name>312 </s_name>
+		<s_ex_id> 123</s_ex_id>
+		<s_co_id>123 </s_co_id>
+		<s_num_out> 12</s_num_out>
+		<s_start_date> 5</s_start_date>
+		<s_exch_date>1 </s_exch_date>
+		<s_start_date> 76</s_start_date>
+		<s_pe>11 </s_pe>
+		<s_52wk_high> 4112</s_52wk_high>
+		<s_52wk_high_date> 412</s_52wk_high_date>
+		<s_52wk_low>666 </s_52wk_low>
+		<s_dividend>123 </s_dividend>
+		<s_yield>945 </s_yield>
+		
+	</security>
+	
+		<security>
+		<id> 423 </id>
+		<s_issue> 123</s_issue>
+		<s_name> 512</s_name>
+		<s_ex_id> 1231</s_ex_id>
+		<s_co_id> 452</s_co_id>
+		<s_num_out>12125 </s_num_out>
+		<s_start_date> 1234123</s_start_date>
+		<s_exch_date> 453412</s_exch_date>
+		<s_start_date> 1512315</s_start_date>
+		<s_pe> 12312351</s_pe>
+		<s_52wk_high> 12312356</s_52wk_high>
+		<s_52wk_high_date>125123 </s_52wk_high_date>
+		<s_52wk_low> 141231</s_52wk_low>
+		<s_dividend> 55624</s_dividend>
+		<s_yield> 2312</s_yield>
+		
+	</security>
+
+
+</securities>

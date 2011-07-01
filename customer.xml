@@ -1,0 +1,149 @@
+<customers>
+	<customer>
+		<id> c000 </id>
+		<c_l_name> Alberto </c_l_name>
+		<c_f_name> Scremin </c_f_name>
+		<c_tier> 1 </c_tier>
+		<c_dob> 02/09/2010 </c_dob>
+
+		<status_type> ola </status_type>
+		
+		<address>
+			<ad_line> rua do aa </ad_line>
+			<ad_line2> 123</ad_line2>
+			<ad_ctry> Brasil </ad_ctry>
+			<zipcode>
+				<zc_code> 29384 </zc_code>
+				<zc_town> Niteroi</zc_town>
+				<zc_div> Brasil </zc_div>
+			</zipcode>
+		</address>
+
+		<taxrate>
+			<tx_id> 123</tx_id>
+			<tx_name> OLA </tx_name>
+			<tx_rate> 0.9 </tx_rate>
+		</taxrate>
+		
+		<taxrate>
+			<tx_id> 3</tx_id>
+			<tx_name> OALA </tx_name>
+			<tx_rate> 0.3 </tx_rate>
+		</taxrate>
+		
+		
+		<customer_account>
+			<ca_id> 123</ca_id>
+			<ca_name> ALOHA </ca_name>
+			<ca_tax_st> deaa </ca_tax_st>
+			<ca_bal> 12323 </ca_bal>
+			
+			<account_permission>
+				<ap_acl> 123 </ap_acl>
+				<ap_l_name> LAL </ap_l_name>
+				<ap_f_name> FOOF </ap_f_name>
+			</account_permission>
+			
+			<broker_id> 1234 </broker_id>
+		</customer_account>
+		
+		<customer_account>
+			<ca_id> 1232</ca_id>
+			<ca_name> AL3OHA </ca_name>
+			<ca_tax_st> de56aa </ca_tax_st>
+			<ca_bal> 123123 </ca_bal>
+			
+			<account_permission>
+				<ap_acl> 12323 </ap_acl>
+				<ap_l_name> L31AL </ap_l_name>
+				<ap_f_name> FO23OF </ap_f_name>
+			</account_permission>
+			
+			<broker_id> 1934 </broker_id>
+		</customer_account>
+		
+		
+		<watch_list> 
+			<wl_id> 12 </wl_id>
+			<id_security> 42 </id_security>
+		</watch_list>
+		
+		<watch_list> 
+			<wl_id> 122 </wl_id>
+			<id_security> 423 </id_security>
+		</watch_list>
+		
+	</customer>	
+	
+	
+	<customer>
+		<id> c000 </id>
+		<c_l_name> Luci </c_l_name>
+		<c_f_name> Scremin </c_f_name>
+		<c_tier> 1 </c_tier>
+		<c_dob> 02/09/2110 </c_dob>
+
+		<status_type> a </status_type>
+		
+		<address>
+			<ad_line> b </ad_line>
+			<ad_line2> 121233</ad_line2>
+			<ad_ctry> Brasil </ad_ctry>
+			<zipcode>
+				<zc_code> 29384 </zc_code>
+				<zc_town> Nitsdaeroi</zc_town>
+				<zc_div> Brasil </zc_div>
+			</zipcode>
+		</address>
+
+		<taxrate>
+			<tx_id> 123</tx_id>
+			<tx_name> OLA </tx_name>
+			<tx_rate> 0.9 </tx_rate>
+		</taxrate>
+		
+		
+		<customer_account>
+			<ca_id> 1235 </ca_id>
+			<ca_name> ALOHFFFA </ca_name>
+			<ca_tax_st> deaffffa </ca_tax_st>
+			<ca_bal> 13 </ca_bal>
+			
+			<account_permission>
+				<ap_acl> 123 </ap_acl>
+				<ap_l_name> LAL </ap_l_name>
+				<ap_f_name> FOOF </ap_f_name>
+			</account_permission>
+			
+			<broker_id> 134 </broker_id>
+		</customer_account>
+		
+		<customer_account>
+			<ca_id> 121132</ca_id>
+			<ca_name> AL3OH4A </ca_name>
+			<ca_tax_st> de56a44a </ca_tax_st>
+			<ca_bal> 66626 </ca_bal>
+			
+			<account_permission>
+				<ap_acl> 1232223 </ap_acl>
+				<ap_l_name> L31231AL </ap_l_name>
+				<ap_f_name> FO25123OF </ap_f_name>
+			</account_permission>
+			
+			<broker_id> 1934 </broker_id>
+		</customer_account>
+		
+		
+		<watch_list> 
+			<wl_id> 123 </wl_id>
+			<id_security> 424 </id_security>
+		</watch_list>
+		
+		<watch_list> 
+			<wl_id> 1122 </wl_id>
+			<id_security> 4223 </id_security>
+		</watch_list>
+		
+	</customer>	
+
+</customers>

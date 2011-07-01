@@ -1,0 +1,55 @@
+<companies>
+
+	<company>
+		<id>1</id>
+		<co_name>XXXXX</co_name>
+		<co_sp_ate>certo</co_sp_ate>
+		
+		<co_desc>Descricao</co_desc>
+		<co_open_date>2011-09-24</co_open_date>
+		<status_type>ACTV</status_type>
+
+		<industries>
+			<in_name>aviacao</in_name>
+			<sector>PAPAPA</sector>
+		</industries>
+		
+		<address>
+			<ad_line>rua do aaasdas</ad_line>
+			<ad_line2>1232</ad_line2>
+			<ad_ctry>Baaa</ad_ctry>
+			<zipcode>
+				<zc_code>12312</zc_code>
+				<zc_town>OLA</zc_town>
+				<zc_div>ASF</zc_div>
+			</zipcode>
+		</address>
+	</company>
+	
+	<company>
+		<id>2</id>
+		<co_name>XXXX1X</co_name>
+		<co_sp_ate>cer3to</co_sp_ate>
+		
+		<co_desc>Descr4icao</co_desc>
+		<co_open_date>2009-09-24</co_open_date>
+		<status_type>ACTV</status_type>
+
+		<industries>
+			<in_name>fooo</in_name>
+			<sector>fassd</sector>
+		</industries>
+		
+		<address>
+			<ad_line>rua do sd</ad_line>
+			<ad_line2>1234</ad_line2>
+			<ad_ctry>1245123</ad_ctry>
+			<zipcode>
+				<zc_code>31235</zc_code>
+				<zc_town>asfas</zc_town>
+				<zc_div>AS12aF</zc_div>
+			</zipcode>
+		</address>
+	</company>
+
+</companies>

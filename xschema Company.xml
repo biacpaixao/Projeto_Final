@@ -10,7 +10,7 @@
 			<xs:element name="co_desc" type="xs:string"/>
 			<xs:element name="co_open_date" type="xs:date"/>
 			<xs:element name="status_type" type="xs:string"/>			
-			<xs:element name="industries" type="tIndustries" minOccurs="0" maxOccurs="unbounded"/>	
+			<xs:element name="industries" type="tIndustries"/>	
 			<xs:element name="address" type="tAddress"/>			
 		</xs:sequence>
 	</xs:complexType>

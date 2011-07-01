@@ -1,0 +1,39 @@
+<exchanges>
+	<exchange>
+		<id>100</id>	
+		<ex_name>NASDAQ</ex_name>		
+		<ex_num_symb>NSDQ</ex_num_symb>	
+		<ex_open>9:00</ex_open>			
+		<ex_close>11:00</ex_close>		
+		
+		<address>
+			<ad_line>rua 5123do aaasdas</ad_line>
+			<ad_line2>121232</ad_line2>
+			<ad_ctry>USA</ad_ctry>
+			<zipcode>
+				<zc_code>12123312</zc_code>
+				<zc_town>das</zc_town>
+				<zc_div>USA</zc_div>
+			</zipcode>
+		</address>
+	</exchange>	
+	
+	<exchange>
+		<id>100</id>	
+		<ex_name>USF</ex_name>		
+		<ex_num_symb>ASD</ex_num_symb>	
+		<ex_open>10:00</ex_open>			
+		<ex_close>21:00</ex_close>		
+		
+		<address>
+			<ad_line>ruaa sa5123do aaasdas</ad_line>
+			<ad_line2>12s1232</ad_line2>
+			<ad_ctry>USSA</ad_ctry>
+			<zipcode>
+				<zc_code>121223312</zc_code>
+				<zc_town>dass</zc_town>
+				<zc_div>USSA</zc_div>
+			</zipcode>
+		</address>
+	</exchange>	
+</exchanges>
