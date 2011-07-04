@@ -1,5 +1,5 @@
 ====
-#5
+#3
 
 for $br in doc("broker.xml")//broker
 where $br/status_type='CNCL'
@@ -7,7 +7,7 @@ return $br
 	
 	
 ====
-#6
+#4
 
 for $x in doc('company.xml')//company
 where $x/co_name = 'XXXXX'
@@ -15,14 +15,14 @@ return $x/industries/sector
 
 
 ====
-#7
+#5
 
 for $x in doc('company.xml')//company
 where $x/address/zipcode/zc_town = 'Rio de Janeiro'
 return $x
 
 ====
-#8
+#6
 
 for $x in doc('customer.xml')
 where (count($x/customer_account) = 1)
@@ -30,14 +30,14 @@ return $x
 
 
 ====
-#9
+#7
 
 for $x in doc('company.xml')//company[co_open_date > '2010-1-1']
 return $x
 
 
 ====
-#10
+#8
 
 for $x in doc('exchange.xml')//exchange
 where $x/address/ad_ctry = 'USA'
@@ -46,7 +46,7 @@ return $x
 
 ====
 
-#11
+#9
 
 for $x in doc('customer.xml')//customer[id ='x']
 return $x/customer_account
