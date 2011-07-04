@@ -16,7 +16,14 @@ revisar intro e enviar para professora
 --Novo:
 
 fazer:
-testar consultas do xml
-fazer o mapreduce para a consulta 4 do mongodb
+testar consultas do xml DONE
+fazer o mapreduce para a consulta 4 do mongodb DONE
 
-criar novas consultas
+criar novas consultas DONE
+
+--Novo:
+
+escrever consultas em xml DONE
+escrever consultas no mongo DONE
+escrever consultas no cassandra
+escrever consultas no redis

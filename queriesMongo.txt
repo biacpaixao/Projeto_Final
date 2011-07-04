@@ -1,0 +1,20 @@
+#5
+db.broker.find({'b_st_id' : 'CNCL'});
+
+#6
+db.company.find({'co_name': 'XXXXX'}, {'industries.sector' : 1});
+
+#7
+db.company.find({'address.zipcode.zc_town' : 'Rio de Janeiro'});
+
+#8
+db.customer.find({'customer_accounts' : {$size : 1}});
+
+#9
+db.company.find({'co_open_date' : {$gt : new Date(2010, 1, 1)});
+
+#10
+db.exchange.find({'address.ad_ctry' : 'USA'});
+
+#11
+db.customer.find({'_id' : XXXX}, {'customer_accounts' : 1});
