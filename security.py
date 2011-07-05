@@ -1,0 +1,31 @@
+db.security.save({'_id': 42,
+					's_issue': 12,
+					's_name': '312',
+					's_ex_id': 123,
+					's_co_id': 123,
+					's_num_out': 12,
+					's_start_date': 5,
+					's_exch_date': 1,
+					's_pe': 11,
+					's_52wk_high': 4112,
+					's_52wk_high_date': 412,
+					's_52wk_low': 666,
+					's_dividend': 123,
+					's_yield': 945
+});
+
+db.security.save({'_id': 423,
+					's_issue': 123,
+					's_name': '1231',
+					's_ex_id': 1231,
+					's_co_id': 452,
+					's_num_out': 12125,
+					's_start_date': 1234123,
+					's_exch_date': 453412,
+					's_pe': 12312351,
+					's_52wk_high': 12312356,
+					's_52wk_high_date': 125123,
+					's_52wk_low': 141231,
+					's_dividend': 55624,
+					's_yield': 2312
+});
