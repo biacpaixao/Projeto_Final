@@ -1,7 +1,7 @@
-#1 - OK
+#1 - OK - OK
 db.customer.find({}, {'c_l_name' : 1, 'c_f_name': 1});
 
-#2 - OK
+#2 - OK - COLOCAR NO DOCUMENTO
 - Precisa de 2 consultas ao banco
 resultado = db.customer.find({'watch_list.wl_id' : 12}, {'watch_list' : 1});
 for res in resultado:
@@ -9,16 +9,16 @@ for res in resultado:
 		if wl['wl_id'] == 12:
 			res_final = db.security.find({'_id' : wl['id_security']})
 
-#3 - OK
+#3 - OK - OK
 db.broker.find({'status_type' : 'CNCL'});
 
-#4 - OK
+#4 - OK - OK
 db.company.find({'co_name': 'XXXXX'}, {'industries.sector' : 1});
 
-#5 - OK
+#5 - OK - OK
 db.company.find({'address.zipcode.zc_town' : 'Rio de Janeiro'});
 
-#6 - OK
+#6 - OK - OK
 db.customer.find({'customer_accounts' : {$size : 1}});
 
 #7 - OK
@@ -39,3 +39,8 @@ for r in resultado:
 
 #11 - TESTAR MAPREDUCE
 Nao e possivel sem utilizar o MapReduce
+
+
+
+#CONCLUSAO
+REFAZER TUDO
